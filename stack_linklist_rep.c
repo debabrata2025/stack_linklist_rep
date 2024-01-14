@@ -84,7 +84,7 @@ int stackBottom(struct node *top){
     return p->data;
 }
 
-//peek operation
+//peek operation in peek operation i < pos-1 because in each iteration we move pointer to its next node || dest node = total move -1
 int peek(struct node *top, int pos){
     struct node *ptr = top;
     for (int i = 0; (i < pos-1 && ptr!=NULL); i++)
